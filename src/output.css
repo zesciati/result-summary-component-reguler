@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.17 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,8 +8,27 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --space-2xs: clamp(0.4375rem, 0.3715rem + 0.2817vw, 0.625rem);
+    --space-s: clamp(0.875rem, 0.743rem + 0.5634vw, 1.25rem);
+    --space-m: clamp(1.3125rem, 1.1144rem + 0.8451vw, 1.875rem);
+    --space-l: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+    --space-xl: clamp(2.625rem, 2.2289rem + 1.6901vw, 3.75rem);
+    --step-1: clamp(1.05rem, 0.8695rem + 0.77vw, 1.5625rem);
+    --step-3: clamp(1.512rem, 1.1847rem + 1.3963vw, 2.4414rem);
+    --font-Hanken-Grotesk: "Hanken Grotesk", sans-serif;
+    --white: hsl(0, 0%, 100%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --bg-red: oklch(0.9804 0.0097 9.53);
+    --bg-yellow: oklch(0.9873 0.0096 72.66);
+    --bg-green: oklch(0.9848 0.0127 172.38);
+    --bg-blue: oklch(0.97 0.0133 286.15);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
   }
 }
 @layer base {
@@ -163,16 +183,167 @@
   .static {
     position: static;
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .contents {
     display: contents;
   }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .rounded-b-\(--space-l\) {
+    border-bottom-right-radius: var(--space-l);
+    border-bottom-left-radius: var(--space-l);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-\(--bg-blue\) {
+    background-color: var(--bg-blue);
+  }
+  .bg-\(--bg-green\) {
+    background-color: var(--bg-green);
+  }
+  .bg-\(--bg-red\) {
+    background-color: var(--bg-red);
+  }
+  .bg-\(--bg-yellow\) {
+    background-color: var(--bg-yellow);
+  }
+  .bg-linear-to-b {
+    --tw-gradient-position: to bottom;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to bottom in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-\(--Light-slate-blue\) {
+    --tw-gradient-from: var(--Light-slate-blue);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\(--Light-royal-blue\) {
+    --tw-gradient-to: var(--Light-royal-blue);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .px-\(--space-l\) {
+    padding-inline: var(--space-l);
+  }
+  .px-\(--space-s\) {
+    padding-inline: var(--space-s);
+  }
+  .px-\(--space-xl\) {
+    padding-inline: var(--space-xl);
+  }
+  .py-\(--space-m\) {
+    padding-block: var(--space-m);
+  }
+  .py-\(--space-s\) {
+    padding-block: var(--space-s);
+  }
+  .pb-\(--space-2xs\) {
+    padding-bottom: var(--space-2xs);
+  }
+  .pb-\(--space-l\) {
+    padding-bottom: var(--space-l);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .font-\(family-name\:--font-Hanken-Grotesk\) {
+    font-family: var(--font-Hanken-Grotesk);
+  }
+  .text-\(length\:--step-1\) {
+    font-size: var(--step-1);
+  }
+  .text-\(length\:--step-3\) {
+    font-size: var(--step-3);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .text-\(--Light-lavender\) {
+    color: var(--Light-lavender);
+  }
+  .text-\(--white\) {
+    color: var(--white);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -182,6 +353,17 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }

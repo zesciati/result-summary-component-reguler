@@ -1,1 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+
+
+@theme {
+
+  --space-3xs: clamp(0.25rem, 0.228rem + 0.0939vw, 0.3125rem);
+  --space-2xs: clamp(0.4375rem, 0.3715rem + 0.2817vw, 0.625rem);
+  --space-xs: clamp(0.6875rem, 0.5995rem + 0.3756vw, 0.9375rem);
+  --space-s: clamp(0.875rem, 0.743rem + 0.5634vw, 1.25rem);
+  --space-m: clamp(1.3125rem, 1.1144rem + 0.8451vw, 1.875rem);
+  --space-l: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+  --space-xl: clamp(2.625rem, 2.2289rem + 1.6901vw, 3.75rem);
+  --space-2xl: clamp(3.5rem, 2.9718rem + 2.2535vw, 5rem);
+  --space-3xl: clamp(5.25rem, 4.4577rem + 3.3803vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, 0.118rem + 0.5634vw, 0.625rem);
+  --space-2xs-xs: clamp(0.4375rem, 0.2614rem + 0.7512vw, 0.9375rem);
+  --space-xs-s: clamp(0.6875rem, 0.4894rem + 0.8451vw, 1.25rem);
+  --space-s-m: clamp(0.875rem, 0.5229rem + 1.5023vw, 1.875rem);
+  --space-m-l: clamp(1.3125rem, 0.8944rem + 1.784vw, 2.5rem);
+  --space-l-xl: clamp(1.75rem, 1.0458rem + 3.0047vw, 3.75rem);
+  --space-xl-2xl: clamp(2.625rem, 1.7887rem + 3.5681vw, 5rem);
+  --space-2xl-3xl: clamp(3.5rem, 2.0915rem + 6.0094vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.875rem, 0.3028rem + 2.4413vw, 2.5rem);
+
+  /* font size 14px-20px */
+  --step--2: clamp(0.6076rem, 0.5399rem + 0.289vw, 0.8rem);
+  --step--1: clamp(0.7292rem, 0.6338rem + 0.4069vw, 1rem);
+  --step-0: clamp(0.875rem, 0.743rem + 0.5634vw, 1.25rem);
+  --step-1: clamp(1.05rem, 0.8695rem + 0.77vw, 1.5625rem);
+  --step-2: clamp(1.26rem, 1.0159rem + 1.0413vw, 1.9531rem);
+  --step-3: clamp(1.512rem, 1.1847rem + 1.3963vw, 2.4414rem);
+  --step-4: clamp(1.8144rem, 1.3787rem + 1.8589vw, 3.0518rem);
+  --step-5: clamp(2.1773rem, 1.6007rem + 2.46vw, 3.8147rem);
+
+  --font-Hanken-Grotesk: "Hanken Grotesk", sans-serif;
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --bg-red: oklch(0.9804 0.0097 9.53);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --bg-yellow: oklch(0.9873 0.0096 72.66);
+  --Green-teal: hsl(166, 100%, 37%);
+  --bg-green: oklch(0.9848 0.0127 172.38);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --bg-blue:oklch(0.97 0.0133 286.15);
+  
+
+  /* Gradients */
+    /* background */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    /* end background */
+
+    /* circle */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    /* end circle */
+}

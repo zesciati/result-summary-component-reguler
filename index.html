@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="./output.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="./src/output.css" rel="stylesheet">
   <title> ZAK | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
-<body>
 
+<body class="font-(family-name:--font-Hanken-Grotesk)  text-(length:--step-1)">
+
+  <section
+    class="result bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) text-center text-(--white) rounded-b-(--space-l) px-(--space-xl)">
+    <p class="py-(--space-m) text-(--Light-lavender)">Your Result</p>
+    <div class="circle pb-(--space-l)">
+      <p>76</p>
+      <p>of 100</p>
+    </div>
+    <p class="pb-(--space-2xs) text-(length:--step-3) font-bold">Great</p>
+    <p class="pb-(--space-l) text-(--Light-lavender)">You scored higher than 65% of the people who have taken these
+      tests</p>
+  </section>
+
+  <aside class="summary px-(--space-l)">
+    <p class="font-bold py-(--space-s)">Summary</p>
+
+    <div class="info-summary">
+
+      <div class="flex  justify-between bg-(--bg-red) px-(--space-s)">
+        <div class="flex">
+          <img src="./assets/images/icon-reaction.svg" alt="icon reaction">
+          <p class="ml-2">Reaction</p>
+        </div>
+        <p class="font-bold"><span class="">80</span> / 100</p>
+      </div>
+
+      <div class="flex  justify-between bg-(--bg-yellow) px-(--space-s) ">
+        <div class="flex">
+          <img src="./assets/images/icon-memory.svg" alt="icon reaction">
+          <p class="ml-2">Memory</p>
+        </div>
+        <p><span class="font-bold">92</span> / 100</p>
+      </div>
+
+      <div class="flex  justify-between  bg-(--bg-green) px-(--space-s)">
+        <div class="flex">
+          <img src="./assets/images/icon-verbal.svg" alt="icon reaction">
+          <p class="ml-2">Verbal</p>
+        </div>
+        <p><span class="font-bold">61</span> / 100</p>
+      </div>
+
+      <div class="flex  justify-between bg-(--bg-blue) px-(--space-s)">
+        <div class="flex">
+          <img src="./assets/images/icon-visual.svg" alt="icon reaction">
+          <p class="ml-2">Visual</p>
+        </div>
+        <p><span class="font-bold">73</span> / 100</p>
+      </div>
+
+    </div>
+
+  </aside>
 
 </body>
+
 </html>
