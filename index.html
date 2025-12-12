@@ -16,61 +16,65 @@
 
 <body class="font-(family-name:--font-Hanken-Grotesk)  text-(length:--step-1)">
 
-  <section
-    class="result bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) text-center text-(--white) rounded-b-(--space-l) px-(--space-xl)">
-    <p class="py-(--space-m) text-(--Light-lavender)">Your Result</p>
-    <div class="circle pb-(--space-l)">
-      <p>76</p>
-      <p>of 100</p>
-    </div>
-    <p class="pb-(--space-2xs) text-(length:--step-3) font-bold">Great</p>
-    <p class="pb-(--space-l) text-(--Light-lavender)">You scored higher than 65% of the people who have taken these
-      tests</p>
-  </section>
+  <main>
+    <section
+      class="result bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) text-center text-(--white) rounded-b-(--space-l) px-(--space-xl)">
+      <p class="py-(--space-m) text-(--Light-lavender) text-(length:--step-3)">Your Result</p>
+      <div class="circle pb-(--space-l) bg-linear-to-b from-(--Violet-blue) to-(--Persian-blue) rounded-full mx-16 p-11">
+        <p class="text-6xl font-bold">76</p>
+        <p class="text-(--Light-lavender)">of 100</p>
+      </div>
+      <p class="pb-(--space-2xs) text-(length:--step-3) font-bold pt-(--space-xs)">Great</p>
+      <p class="pb-(--space-l) text-(--Light-lavender)">You scored higher than 65% of the people who have taken these
+        tests</p>
+    </section>
 
-  <aside class="summary px-(--space-l) text-center">
-    <p class="font-bold py-(--space-s) text-left">Summary</p>
+    <aside class="summary px-(--space-l) text-center">
+      <p class="font-bold py-(--space-s) text-left">Summary</p>
 
-    <div class="info-summary">
+      <div class="info-summary">
 
-      <div class="flex  justify-between bg-(--bg-red) px-(--space-s) py-(--space-xs)">
-        <div class="flex">
-          <img src="./assets/images/icon-reaction.svg" alt="icon reaction">
-          <p class="ml-2 text-(--Light-red)">Reaction</p>
+        <div class="flex  justify-between bg-(--bg-red) px-(--space-s) py-(--space-xs)">
+          <div class="flex">
+            <img src="./assets/images/icon-reaction.svg" alt="icon reaction">
+            <p class="ml-2 text-(--Light-red)">Reaction</p>
+          </div>
+          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">80</span> / 100</p>
         </div>
-        <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">80</span> / 100</p>
+
+        <div class="flex  justify-between bg-(--bg-yellow) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+          <div class="flex">
+            <img src="./assets/images/icon-memory.svg" alt="icon reaction">
+            <p class="ml-2 text-(--Orangey-yellow)">Memory</p>
+          </div>
+          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">92</span> / 100</p>
+        </div>
+
+        <div class="flex  justify-between  bg-(--bg-green) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+          <div class="flex">
+            <img src="./assets/images/icon-verbal.svg" alt="icon reaction">
+            <p class="ml-2 text-(--Green-teal)">Verbal</p>
+          </div>
+          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">61</span> / 100</p>
+        </div>
+
+        <div class="flex  justify-between bg-(--bg-blue) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+          <div class="flex">
+            <img src="./assets/images/icon-visual.svg" alt="icon reaction">
+            <p class="ml-2 text-(--Cobalt-blue)">Visual</p>
+          </div>
+          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">73</span> / 100</p>
+        </div>
+
       </div>
 
-      <div class="flex  justify-between bg-(--bg-yellow) px-(--space-s) py-(--space-xs) mt-(--space-s)">
-        <div class="flex">
-          <img src="./assets/images/icon-memory.svg" alt="icon reaction">
-          <p class="ml-2 text-(--Orangey-yellow)">Memory</p>
-        </div>
-        <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">92</span> / 100</p>
-      </div>
+      <button
+        class="bg-(--Dark-gray-blue) text-(--white) w-full max-w-full rounded-4xl mt-(--space-s) py-(--space-xs) hover:bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) mb-(--space-l)">Continue</button>
 
-      <div class="flex  justify-between  bg-(--bg-green) px-(--space-s) py-(--space-xs) mt-(--space-s)">
-        <div class="flex">
-          <img src="./assets/images/icon-verbal.svg" alt="icon reaction">
-          <p class="ml-2 text-(--Green-teal)">Verbal</p>
-        </div>
-        <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">61</span> / 100</p>
-      </div>
+    </aside>
 
-      <div class="flex  justify-between bg-(--bg-blue) px-(--space-s) py-(--space-xs) mt-(--space-s)">
-        <div class="flex">
-          <img src="./assets/images/icon-visual.svg" alt="icon reaction">
-          <p class="ml-2 text-(--Cobalt-blue)">Visual</p>
-        </div>
-        <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">73</span> / 100</p>
-      </div>
+  </main>
 
-    </div>
-
-    <button class="bg-(--Dark-gray-blue) text-(--white) w-full max-w-full rounded-4xl mt-(--space-s) py-(--space-xs)">Continue</button>
-    
-  </aside>
-  
 </body>
 
 </html>
