@@ -18,10 +18,10 @@
 
   <main class="sm:flex sm:flex-row sm:justify-center sm:items-center sm:min-h-screen">
     <section
-      class="result bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) text-center text-(--white) rounded-b-(--space-l) px-(--space-xl) sm:rounded-t-(--space-l) sm:w-xs">
-      <p class="py-(--space-m) text-(--Light-lavender) text-(length:--step-3) font-semibold sm:text-(length:--step-1)">Your Result</p>
+      class="result bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) text-center text-(--white) rounded-b-(--space-l) px-(--space-xl) sm:rounded-t-(--space-l) sm:w-[300px]">
+      <p class="py-(--space-m) text-(--Light-lavender) text-(length:--step-3) font-bold sm:text-(length:--step-1)">Your Result</p>
       <div
-        class="circle pb-(--space-l) bg-linear-to-b from-(--Violet-blue) to-(--Persian-blue) rounded-full  mx-16 p-11 sm:mx-[28px] ">
+        class="circle pb-(--space-l) bg-linear-to-b from-(--Violet-blue) to-(--Persian-blue) rounded-full  mx-16 p-11 sm:mx-4 ">
         <p class="text-6xl font-bold">76</p>
         <p class="text-(--Light-lavender)">of 100</p>
       </div>
@@ -30,47 +30,47 @@
         tests</p>
     </section>
 
-    <aside class="summary px-(--space-l) text-center sm:bg-(--white) sm:rounded-e-3xl">
+    <aside class="summary px-(--space-l) text-center sm:bg-(--white) sm:rounded-e-3xl sm:w-[300px]">
       <p class="font-bold py-(--space-s) text-left">Summary</p>
 
-      <div class="info-summary">
+      <div class="info-summary sm:py-6">
 
-        <div class="flex  justify-between bg-(--bg-red) px-(--space-s) py-(--space-xs)">
+        <div class="flex  justify-between bg-(--bg-red) px-(--space-s) py-(--space-xs) sm:py-(--space-2xs) rounded-lg">
           <div class="flex">
             <img src="./assets/images/icon-reaction.svg" alt="icon reaction">
-            <p class="ml-2 text-(--Light-red)">Reaction</p>
+            <p class="ml-2 text-(--Light-red) sm:text-(length:--step-0) sm:font-bold">Reaction</p>
           </div>
-          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">80</span> / 100</p>
+          <p class="font-bold text-(--Light-lavender) sm:text-(length:--step-0)"><span class="text-(--Dark-gray-blue)">80</span> / 100</p>
         </div>
 
-        <div class="flex  justify-between bg-(--bg-yellow) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+        <div class="flex  justify-between bg-(--bg-yellow) px-(--space-s) py-(--space-xs) mt-(--space-s) sm:py-(--space-2xs) rounded-lg">
           <div class="flex">
             <img src="./assets/images/icon-memory.svg" alt="icon reaction">
-            <p class="ml-2 text-(--Orangey-yellow)">Memory</p>
+            <p class="ml-2 text-(--Orangey-yellow) sm:text-(length:--step-0) sm:font-bold">Memory</p>
           </div>
-          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">92</span> / 100</p>
+          <p class="font-bold text-(--Light-lavender) sm:text-(length:--step-0)"><span class="text-(--Dark-gray-blue)">92</span> / 100</p>
         </div>
 
-        <div class="flex  justify-between  bg-(--bg-green) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+        <div class="flex  justify-between  bg-(--bg-green) px-(--space-s) py-(--space-xs) mt-(--space-s) sm:py-(--space-2xs) rounded-lg">
           <div class="flex">
             <img src="./assets/images/icon-verbal.svg" alt="icon reaction">
-            <p class="ml-2 text-(--Green-teal)">Verbal</p>
+            <p class="ml-2 text-(--Green-teal) sm:text-(length:--step-0) sm:font-bold">Verbal</p>
           </div>
-          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">61</span> / 100</p>
+          <p class="font-bold text-(--Light-lavender) sm:text-(length:--step-0)"><span class="text-(--Dark-gray-blue)">61</span> / 100</p>
         </div>
 
-        <div class="flex  justify-between bg-(--bg-blue) px-(--space-s) py-(--space-xs) mt-(--space-s)">
+        <div class="flex  justify-between bg-(--bg-blue) px-(--space-s) py-(--space-xs) mt-(--space-s) sm:py-(--space-2xs) rounded-lg">
           <div class="flex">
             <img src="./assets/images/icon-visual.svg" alt="icon reaction">
-            <p class="ml-2 text-(--Cobalt-blue)">Visual</p>
+            <p class="ml-2 text-(--Cobalt-blue) sm:text-(length:--step-0) sm:font-bold">Visual</p>
           </div>
-          <p class="font-bold text-(--Light-lavender)"><span class="text-(--Dark-gray-blue)">73</span> / 100</p>
+          <p class="font-bold text-(--Light-lavender) sm:text-(length:--step-0)"><span class="text-(--Dark-gray-blue)">73</span> / 100</p>
         </div>
 
       </div>
 
       <button
-        class="bg-(--Dark-gray-blue) text-(--white) w-full max-w-full rounded-4xl mt-(--space-s) py-(--space-xs) hover:bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) mb-(--space-l)">Continue</button>
+        class="bg-(--Dark-gray-blue) text-(--white) w-full max-w-full rounded-4xl mt-(--space-s) py-(--space-xs) hover:bg-linear-to-b from-(--Light-slate-blue) to-(--Light-royal-blue) mb-(--space-l) sm:py-(--space-2xs) sm:mb-10 sm:mt-(--space-3xs)">Continue</button>
 
     </aside>
 
