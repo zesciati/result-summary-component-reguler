@@ -6,5 +6,5 @@ mobile-size:
   ✔ button continue hover @done(25-12-13 01:33)
 
 desktop-size:
-  ☐ result di kiri dan summary di kanan
-  ☐ 
+  ☐ posisi relatif summary
+  ☐ posisi absolute your result
